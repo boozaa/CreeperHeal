@@ -13,7 +13,6 @@ import org.bukkit.Location;
 import org.bukkit.craftbukkit.v1_4_R1.CraftWorld;
 import org.bukkit.entity.Hanging;
 
-
 import com.nitnelave.CreeperHeal.config.CreeperConfig;
 
 public class PaintingsManager {

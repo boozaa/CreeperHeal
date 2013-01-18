@@ -184,7 +184,9 @@ public class CreeperPainting
 			CreeperLog.debug("item frame");
 			ItemFrame f = (ItemFrame) hanging;
 			EntityItemFrame frame = new EntityItemFrame(w.getHandle(), loc.getBlockX(), loc.getBlockY(), loc.getBlockZ(), dir);
-			net.minecraft.server.v1_4_R1.ItemStack stack = new net.minecraft.server.v1_4_R1.ItemStack(f.getItem().getTypeId(), 1, (short) 0);
+
+			net.minecraft.server.v1_4_R1.ItemStack stack = new net.minecraft.server.v1_4_R1.ItemStack(f.getItem().getTypeId(), 1, 0);
+
 			frame.a(stack);
 			//set item rotation, direction
 			if(!frame.survives()) {
