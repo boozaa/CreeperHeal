@@ -40,7 +40,7 @@ public class CreeperChest extends CreeperBlock {
 				neighborInventory = otherInv.getContents();
 
 				inv.clear();
-				neighbor.getBlock().setTypeIdAndData(0, (byte)0, false);
+				((BlockState) neighbor).getBlock().setTypeIdAndData(0, (byte)0, false);
 
 			}
 			else
@@ -66,7 +66,7 @@ public class CreeperChest extends CreeperBlock {
 
 
 	public Chest getNeighbor() {
-		return neighbor;
+		return (Chest) neighbor;
 	}
 
 
@@ -112,7 +112,7 @@ public class CreeperChest extends CreeperBlock {
 		try {
 			if(hasNeighbor())
 			{
-				neighbor.update(true);
+				((BlockState) neighbor).update(true);
 				Inventory i = ((InventoryHolder)chest.getState()).getInventory();
 				ItemStack[] both;
 				ItemStack[] otherInv = neighborInventory;

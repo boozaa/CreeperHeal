@@ -5,7 +5,6 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -18,10 +17,8 @@ import org.bukkit.block.NoteBlock;
 import org.bukkit.block.Sign;
 import org.bukkit.block.Skull;
 import org.bukkit.inventory.InventoryHolder;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.material.Attachable;
 import org.bukkit.material.Rails;
-
 import com.nitnelave.CreeperHeal.CreeperHeal;
 import com.nitnelave.CreeperHeal.PluginHandler;
 import com.nitnelave.CreeperHeal.config.CreeperConfig;
@@ -116,14 +113,14 @@ public class CreeperBlock {
 
 	public void dropBlock()
 	{
-
+		/*
 		Location loc = blockState.getBlock().getLocation();
 		World w = loc.getWorld();
-
+		
 		ItemStack drop = CreeperDrop.getDrop(blockState);
 		if(drop != null)
 			w.dropItemNaturally(loc, drop);
-
+		*/
 	}
 
 

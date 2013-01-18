@@ -7,11 +7,12 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-import net.minecraft.server.v1_4_6.WorldServer;
+import net.minecraft.server.v1_4_R1.WorldServer;
 
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_4_6.CraftWorld;
+import org.bukkit.craftbukkit.v1_4_R1.CraftWorld;
 import org.bukkit.entity.Hanging;
+
 
 import com.nitnelave.CreeperHeal.config.CreeperConfig;
 

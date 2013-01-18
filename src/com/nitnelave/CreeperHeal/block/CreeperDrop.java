@@ -2,7 +2,6 @@ package com.nitnelave.CreeperHeal.block;
 
 import java.lang.reflect.Method;
 import java.util.Random;
-
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockState;
 import org.bukkit.inventory.ItemStack;
@@ -116,7 +115,7 @@ public class CreeperDrop
 	public static ItemStack getDrop(int blockTypeId, byte data) {
 		if (blockTypeId < 1 || blockTypeId > 255) return null;
 		try {
-			net.minecraft.server.v1_4_6.Block b = net.minecraft.server.v1_4_6.Block.byId[blockTypeId];
+			net.minecraft.server.v1_4_R1.Block b = net.minecraft.server.v1_4_R1.Block.byId[blockTypeId];
 
 			int typeId = b.getDropType(blockTypeId, random, 0);
 			if (typeId < 1) return null;
