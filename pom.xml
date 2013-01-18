@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.nitnelave.CreeperHeal.CreeperHeal</groupId>
+    <groupId>com.nitnelave.CreeperHeal</groupId>
     <artifactId>CreeperHeal</artifactId>
     <version>5.8.2</version>
     <name>CreeperHeal</name>
@@ -78,6 +78,22 @@
             <version>1.4.7-R0.2-SNAPSHOT</version>
             <type>jar</type>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.bananaco.bpermissions.imp</groupId>
+            <artifactId>CreeperTrap</artifactId>
+            <version>2.9.23</version>
+            <type>jar</type>
+        	<scope>system</scope>
+  			<systemPath>${project.basedir}/lib/bpermissions.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.nitnelave.CreeperTrap</groupId>
+            <artifactId>CreeperTrap</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+        	<scope>system</scope>
+  			<systemPath>${project.basedir}/lib/CreeperTrap.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
